@@ -5,9 +5,9 @@
   description: 'Dont like to take decisions? Have the 8-ball do it for you instead.'
   filename: 8-ball.pl
   license: GPL
-  modified: '2015-04-24 12:08:27'
+  modified: '2015-09-15 19:05:29'
   name: 8-ball
-  version: '0.21'
+  version: '0.22'
 -
   authors: 'Dani Soufi (compengi)'
   contact: 'IRC: Freenode network, #ubuntu-lb'
@@ -508,6 +508,19 @@
   name: bandwidth
   url: http://nchip.ukkosenjyly.mine.nu/irssiscripts/
   version: '1.0'
+-
+  authors:
+    - 'Nathan Handler'
+    - 'Joseph Price'
+  contact:
+    - nathan.handler@gmail.com
+    - pricechild@ubuntu.com
+  description: 'Searches for bans, quiets, and channel modes affecting a user'
+  filename: bansearch.pl
+  license: GPLv3+
+  modified: '2015-09-11 05:01:40'
+  name: bansearch
+  version: '1.1'
 -
   authors: "David O'Rourke"
   contact: phyber@#irssi
@@ -1564,6 +1577,15 @@
   url: http://wouter.coekaerts.be/irssi/
   version: '2.1'
 -
+  authors: 'Nathan Handler'
+  contact: nathan.handler@gmail.com
+  description: 'Greps the ban list for the specified pattern'
+  filename: grepbans.pl
+  license: GPLv3+
+  modified: '2015-09-11 05:11:39'
+  name: grepbans
+  version: '1.0'
+-
   authors: mistr
   contact: mistr@sensewave.com
   description: '/gsi <phone nr> checks number via http://gulesider.no. Norwegian 8-digit numbers only. Nice if you have caller-ID and are as paranoid as me.'
@@ -1664,7 +1686,7 @@
   modified: '2015-01-28 14:40:37'
   name: hilightwin
   url: http://irssi.org/
-  version: '0.03'
+  version: '0.04'
 -
   authors: 'John Morrissey'
   contact: jwm@horde.net
@@ -1971,9 +1993,9 @@
   description: 'freenode-specific script that checks whether someone is banned on some channel'
   filename: isbanned.pl
   license: 'Public domain'
-  modified: '2015-06-12 21:43:19'
+  modified: '2015-09-14 14:11:01'
   name: isbanned
-  version: 0.6.4
+  version: 0.7.0
 -
   authors: 'Uli Baumann'
   contact: f-zappa@irc-muenster.de
@@ -2490,6 +2512,16 @@
   url: http://pwp.netcabo.pt/ricardomesquita/irssi
   version: 0.01+1
 -
+  authors: 'Thomas B. Ruecker'
+  contact: 'thomas@ruecker.fi, tbr on irc.freenode.net'
+  description: 'Sends out notifications via MQTT'
+  filename: mqtt-notify.pl
+  license: BSD-3-Clause
+  modified: '2015-06-30 12:01:33'
+  name: MQTT-notify
+  url: http://github.com/dm8tbr/irssi-mqtt-notify/
+  version: '1.0'
+-
   authors: 'Morten Lied Johansen'
   contact: mortenjo@ifi.uio.no
   description: 'For a configured list of nicks, convert all their messages to a notice'
@@ -2962,6 +2994,15 @@
   name: pager
   version: '1.1'
 -
+  authors: fprintf
+  contact: fprintf@github.com
+  description: 'Render text with various color modifications using HTML tag syntax.'
+  filename: pangotext.pl
+  license: 'GNU GPLv2 or later'
+  modified: '2015-09-19 03:19:49'
+  name: pangotext
+  version: '1.1'
+-
   authors: 'Marcin Rozycki, Stanislaw Halik'
   contact: derwan@irssi.pl
   description: 'Usage: /paste [-all|-msgs|-public] [-c|-b] [-s|-l| where] [lines]'
@@ -3327,6 +3368,15 @@
   url: http://ion.amigafin.org/irssi/
   version: '0.1'
 -
+  authors: 'Wouter Coekaerts, Emanuele Giaquinta'
+  contact: 'wouter@coekaerts.be, exg@irssi.org'
+  description: 'search in your scrollback, scroll to a match'
+  filename: sb_search.pl
+  license: 'GPLv2 or later'
+  name: sb_search
+  url: http://wouter.coekaerts.be/irssi/
+  version: '1.1'
+-
   authors: 'Robert Scheck'
   commands: schwäbisch
   contact: irssi@robert-scheck.de
@@ -3342,7 +3392,7 @@
   description: 'set (un)away, if screen is attached/detached'
   filename: screen_away.pl
   license: 'GPL v2'
-  modified: '2014-12-20 20:38:24'
+  modified: '2015-08-20 10:46:58'
   name: screen_away
   url: none
   version: 0.9.8.1
@@ -3503,14 +3553,14 @@
   name: showmode
   version: '0.3'
 -
-  authors: 'Morten Lied Johansen'
+  authors: 'Morten Lied Johansen, Jonas Berlin'
   contact: mortenjo@ifi.uio.no
-  description: 'Convert to slack-mention when completing nicks'
+  description: 'Prefix nicks with @ when completing nicks to match conventions on networks like Slack, Flowdock, Gitter etc'
   filename: slack_complete.pl
   license: GPL
   modified: '2015-04-29 11:11:15'
   name: slack_complete
-  version: '1.0'
+  version: '1.1'
 -
   authors: 'Lars Djerf'
   contact: lars.djerf@gmail.com
@@ -3835,15 +3885,25 @@
   name: 'Tor autodetection for Irssi'
   version: 0.0.1
 -
+  authors: Ziddy
+  contact: DALnet
+  description: 'Keeps track of users by building a databaseof online, joining and nickchanges. Regex-cabablefor the most part, AKA import available. Search byident, nick or host'
+  filename: track.pl
+  license: 'Public Domain'
+  modified: '9-19-2015 02:11:00'
+  name: track.pl
+  url: none
+  version: '2.1'
+-
   authors: "Peter 'kinlo' Leurs, Uwe Dudenhoeffer, Michiel Holtkamp, Nico R. Wohlgemuth"
   contact: irssi-trackbar@supermind.nl
   description: "Shows a bar where you've last read a window"
   filename: trackbar.pl
   license: GPLv2
-  modified: '2015-06-12 22:03:44'
+  modified: '2015-06-29 20:02:06'
   name: trackbar
   url: http://github.com/mjholtkamp/irssi-trackbar/
-  version: '1.8'
+  version: '1.9'
 -
   authors: 'Timo Sirainen'
   contact: tss@iki.fi
@@ -3871,7 +3931,7 @@
   modified: '2006-01-23 13:10:19'
   name: trigger
   url: http://wouter.coekaerts.be/irssi/
-  version: '1.0'
+  version: 1.0+
 -
   authors: "Stefan 'tommie' Tomanek"
   commands: trustweb
@@ -4156,6 +4216,16 @@
   name: whitelist
   version: '1.0'
 -
+  authors: 'Svante Kvarnström'
+  contact: sjk@ankeborg.nu
+  description: 'Counts the number of matches in /who lists'
+  filename: whocount.pl
+  license: GPL
+  modified: '2015-03-24 12:50:11'
+  name: whocount.pl
+  url: http://sjk.ankeborg.nu
+  version: 0.0.2
+-
   authors: "Maciek 'fahren' Freudenheim"
   contact: fahren@bochnia.pl
   description: "Hilights '@' in whois channel reply"
@@ -4272,15 +4342,25 @@
   name: Xcmd
   version: '0.2'
 -
-  authors: "Stefan 'tommie' Tomanek"
+  authors: 'Julie LaLa'
+  contact: ryz@asdf.us
+  description: 'Run an XDCC file server from irssi.'
+  filename: xdcc.pl
+  license: 'Jollo LNT license'
+  modified: '2015-06-12 22:16:41'
+  name: xdcc.pl
+  url: http://asdf.us/xdcc/
+  version: '1.0'
+-
+  authors: "Stefan 'tommie' Tomanek, Obfuscoder"
   commands: xdccget
-  contact: stefan@pico.ruhr.de
-  description: 'advances downloading from XDCC bots'
+  contact: obfuscoder@obfusco.de
+  description: 'enhanced downloading, queing, searching from XDCC bots'
   filename: xdccget.pl
   license: GPLv2
-  modified: '2008-05-17 17:39:09'
-  name: XDCCget
-  version: '20040509'
+  modified: '2014-10-16 14:47:21'
+  name: xdccget
+  version: '20141016'
 -
   authors: "Stefan 'tommie' Tomanek"
   commands: xetra
@@ -4334,6 +4414,17 @@
   name: XMMSInfo
   url: http://shakti.tky.hut.fi/stuff.xml#irssi
   version: '1.01'
+-
+  authors: 'Thomas B. Ruecker'
+  contact: 'thomas@ruecker.fi, tbr on irc.freenode.net'
+  description: 'Sends out notifications via XMPP. Based on a script by Peter Krenesky.'
+  filename: xmpp-notify.pl
+  license: BSD-3-Clause
+  modified: '2015-06-30 12:00:46'
+  modules: Net::Jabber
+  name: XMPP-notify
+  url: http://github.com/dm8tbr/irssi-xmpp-notify/
+  version: '1.0'
 -
   authors: mizerou
   commands: xqf
